@@ -4,7 +4,7 @@ import Loader from "./Loader";
 
 function Summary({ file }) {
   const genAI = new GoogleGenerativeAI(
-    "AIzaSyC-LEie1qtXeE6z2u1tdh_JX1c07uBbNq8"
+    "YOUR_API_KEY"
   );
   const model = genAI.getGenerativeModel({ model: "models/gemini-1.5-flash" });
   const [summary, setSummary] = useState("");
